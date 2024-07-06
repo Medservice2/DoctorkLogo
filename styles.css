@@ -19,7 +19,7 @@ body {
     align-items: center;
     width: 200px;
     height: 200px;
-    background-color: #360036; /* لون الدائرة */
+    background-color: #bb86fc; /* لون الدائرة */
     border-radius: 50%;
     margin: 0 auto 20px;
     position: relative;
@@ -42,7 +42,7 @@ body {
 }
 
 .text {
-    color: #360036; /* لون النص */
+    color: #7f39fb; /* لون النص */
     font-size: 24px;
     border-right: 2px solid #008b8b; /* مؤشر الكتابة على اليمين */
     white-space: nowrap;
