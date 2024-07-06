@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* خلفية بيضاء */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #360036; /* لون الدائرة */
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.text {
+    color: #360036; /* لون النص */
+    font-size: 24px;
+    border-right: 2px solid #008b8b; /* مؤشر الكتابة على اليمين */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    direction: rtl;
+    text-align: right;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #008b8b;
+    }
+  }
